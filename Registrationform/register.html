@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Registeration Page</h1>
+
+    <form action="./registersuccess.html" method="post">
+        <fieldset>
+            <legend><h3>Personal Details</h3></legend>
+        <label>First Name</label>
+        <input type="text" name="First_name" id="First_name" required placeholder="enter first name" autofocus><br>
+        <label>Middle Name</label>
+        <input type="text" name="Middle_name" id="Middle_name" placeholder="enter middle name">(optional)<br>
+        <label>Last Name</label>
+        <input type="text" name="Last_name" id="Last_name" required placeholder="enter last name"><br>
+        <label>Gender</label>
+        <label for="Male" >
+        <input type="radio" name="Gender" id="Male" value="Male" required>Male
+        </label>
+        <label for="Female">
+        <input type="radio" name="Gender" id="Female" value="Female" required>Female
+        </label><br>
+        <label>Date Of Birth</label>
+        <input type="date" name="Date of Birth" id="date" required><br>
+        <label>Phone Number</label>
+        <input type="number" name="Phone Number" id="Phone Number" maxlength="10" required placeholder="enter Phone number"><br>
+        <label>Email</label>
+        <input type="email" name="email" id="email" required placeholder="enter email"><br>
+        <label>PAN Card</label>
+        <input type="text" name="PAN" id="PAN" placeholder="PAN Number"> (optional)<br>
+        <label>Aadhar Card</label>
+        <input type="text" name="Aadhar" id="Aadhar" placeholder="Aadhar number"> (optional)<br>
+        <label>Nationality</label>
+        <input type="text" name="Nationality" id="Nationality" placeholder="enter here"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend><h3>Login Information</h3></legend>
+        <label>User Id</label>
+        <input type="text" name="UserID" id="UserID" required autofocus placeholder="Username"><br>
+
+        <label>password</label>
+        <input type="password" name="password" id="pass" required autofocus placeholder="password">
+        </fieldset>
+
+        <input type="submit" value="register">
+
+    </form>
+    
+</body>
+</html>
